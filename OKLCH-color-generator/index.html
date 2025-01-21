@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OKLCH Color Generator</title>
+    <meta name="robots" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-5xl font-bold mt-4 mb-8">OKLCH Color Generator</h1>
+      <input
+        type="text"
+        class="border border-gray-400 p-2 rounded-md mr-2 text-2xl"
+        id="hexInput"
+        placeholder="#000000"
+      />
+      <button
+        onclick="generateColors()"
+        class="p-2 text-white bg-blue-600 ring rounded-md text-2xl"
+      >
+        Generate Colors
+      </button>
+      <div id="colorContainer"></div>
+    </div>
+  </body>
+</html>
